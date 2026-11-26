@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>Comparativa de logo — THE ROOM</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { min-height:100vh; background:#080808; color:#eeeae4; font-family:Arial,sans-serif; }
+    .preview { width:min(980px,92vw); margin:64px auto; }
+    .preview h1 { font:700 24px/1.1 "Montserrat",Arial,sans-serif; letter-spacing:-.04em; margin:0 0 12px; }
+    .preview-intro { color:#9c958e; font-size:12px; margin:0 0 34px; }
+    .option { margin:0 0 24px; border:1px solid rgba(238,234,228,.15); }
+    .option-label { display:flex; justify-content:space-between; padding:12px 16px; color:#aaa19a; font-size:9px; letter-spacing:.14em; text-transform:uppercase; }
+    .option-label b { color:#eeeae4; font-weight:400; }
+    .preview-nav { position:relative; width:auto; height:76px; padding:0 28px; background:#0d0c0c; border:0; }
+    .preview-nav nav { display:flex; }
+    .preview-nav .nav-index { display:flex; }
+    .preview-nav .room-wordmark { flex:0 0 150px; width:150px; }
+    .preview-nav .room-wordmark img { display:block; width:100%; height:auto; }
+    .room-wordmark.pixel { font-family:"Minecraft",monospace; font-size:17px; font-weight:400; letter-spacing:0; }
+    .room-wordmark.pixel span { font-family:Arial,sans-serif; }
+    .svg-lockup { display:block; width:48px; height:48px; object-fit:contain; flex:0 0 150px; }
+    @media(max-width:700px) {
+      .preview { margin:32px auto; }
+      .preview-nav { height:64px; padding:0 14px; }
+      .preview-nav nav,.preview-nav .nav-index { display:none; }
+      .preview-nav .room-wordmark { flex-basis:130px; width:130px; }
+      .svg-lockup { flex-basis:auto; width:42px; height:42px; }
+      .room-wordmark.pixel { font-size:15px; }
+    }
+  </style>
+</head>
+<body class="room-site">
+  <main class="preview">
+    <h1>Logo en el header</h1>
+    <p class="preview-intro">Comparación a tamaño real en el mismo header. En móvil se muestra el espacio compacto del menú.</p>
+    <section class="option" aria-label="Wordmark actual">
+      <div class="option-label"><b>01 — Actual</b><span>Texto en negrita</span></div>
+      <header class="room-nav preview-nav">
+        <a class="room-wordmark" href="#" aria-label="THE ROOM inicio">THE ROOM<span>™</span></a>
+        <nav><a href="#">IDENTIDAD</a><a href="#">ARCHIVO</a><a href="#">CONTACTO</a></nav>
+        <div class="metronome"><span class="metro-trigger"><span>128</span><small>BPM</small></span></div>
+        <a class="nav-index" href="#">ENTRA EN LA FRECUENCIA ↗</a>
+      </header>
+    </section>
+    <section class="option" aria-label="Wordmark con Minecraft">
+      <div class="option-label"><b>02 — Minecraft</b><span>Texto en tipografía pixel</span></div>
+      <header class="room-nav preview-nav">
+        <a class="room-wordmark pixel" href="#" aria-label="THE ROOM inicio">THE ROOM<span>™</span></a>
+        <nav><a href="#">IDENTIDAD</a><a href="#">ARCHIVO</a><a href="#">CONTACTO</a></nav>
+        <div class="metronome"><span class="metro-trigger"><span>128</span><small>BPM</small></span></div>
+        <a class="nav-index" href="#">ENTRA EN LA FRECUENCIA ↗</a>
+      </header>
+    </section>
+    <section class="option" aria-label="Emblema SVG cuadrado">
+      <div class="option-label"><b>03 — Emblema original</b><span>Versión cuadrada</span></div>
+      <header class="room-nav preview-nav">
+        <a href="#" aria-label="THE ROOM inicio"><img class="svg-lockup" src="assets/images/logo.svg" alt="THE ROOM"></a>
+        <nav><a href="#">IDENTIDAD</a><a href="#">ARCHIVO</a><a href="#">CONTACTO</a></nav>
+        <div class="metronome"><span class="metro-trigger"><span>128</span><small>BPM</small></span></div>
+        <a class="nav-index" href="#">ENTRA EN LA FRECUENCIA ↗</a>
+      </header>
+    </section>
+
+    <section class="option" aria-label="Emblema SVG horizontal">
+      <div class="option-label"><b>04 — SVG horizontal</b><span>Lockup horizontal derivado del original</span></div>
+      <header class="room-nav preview-nav">
+        <a class="room-wordmark" href="#" aria-label="THE ROOM inicio"><img src="assets/images/logo-horizontal.svg" alt="THE ROOM™"></a>
+        <nav><a href="#">IDENTIDAD</a><a href="#">ARCHIVO</a><a href="#">CONTACTO</a></nav>
+        <div class="metronome"><span class="metro-trigger"><span>128</span><small>BPM</small></span></div>
+        <a class="nav-index" href="#">ENTRA EN LA FRECUENCIA ↗</a>
+      </header>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta name="description" content="THE ROOM™ — un espacio para quienes habitan el otro lado del sonido. Underground culture / electronic music / MX.">
+  <title>THE ROOM™ — Underground Culture</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#top">SALTAR AL CONTENIDO PRINCIPAL</a>
+  <main class="room-site">
+    <header class="room-nav">
+      <div class="header-brand-group">
+        <a class="room-wordmark" href="#top" aria-label="THE ROOM™ inicio"><img src="assets/images/logo-horizontal.svg" alt="THE ROOM™"></a>
+        <div class="metronome" data-metronome>
+          <div class="metro-beats" role="group" aria-label="Toca los pulsos para marcar un tempo">
+            <button type="button" data-tap aria-label="Marcar tempo, pulso 1"><span></span></button>
+            <button type="button" data-tap aria-label="Marcar tempo, pulso 2"><span></span></button>
+            <button type="button" data-tap aria-label="Marcar tempo, pulso 3"><span></span></button>
+            <button type="button" data-tap aria-label="Marcar tempo, pulso 4"><span></span></button>
+          </div>
+          <button class="metro-trigger" type="button" aria-expanded="false" aria-controls="metro-panel">
+            <span data-tempo-readout>128</span><small>BPM</small><svg viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4"/></svg>
+          </button>
+          <div class="metro-panel" id="metro-panel" hidden>
+            <div class="metro-panel-heading"><span>TEMPO</span><span data-panel-tempo>128 BPM</span></div>
+            <div class="metro-presets" role="group" aria-label="Tempos predefinidos">
+              <button type="button" data-bpm="124">124</button><button type="button" data-bpm="128" aria-pressed="true">128</button><button type="button" data-bpm="140">140</button><button type="button" data-bpm="174">174</button>
+            </div>
+            <button class="metro-action" type="button" data-metronome-toggle aria-pressed="true"><span class="metro-action-dot"></span><span data-toggle-label>PAUSAR</span></button>
+            <button class="metro-action" type="button" data-kick-toggle aria-pressed="false"><span class="metro-action-dot"></span><span data-kick-label>KICK OFF</span></button>
+            <p>SYNC / HERO PULSE — El tempo sincroniza el pulso y la escritura del título.</p>
+          </div>
+        </div>
+      </div>
+      <button class="nav-menu-toggle" type="button" data-menu-toggle aria-label="Abrir menú" aria-controls="header-links" aria-expanded="false">
+        <span class="nav-menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+      <div class="header-nav-group" id="header-links" data-header-links>
+        <nav aria-label="Navegación principal">
+          <a href="#manifesto">IDENTIDAD</a><a href="#archive">ARCHIVO</a><a href="#signal">CONTACTO</a>
+        </nav>
+        <nav class="header-social-links" aria-label="Redes sociales">
+          <a href="https://www.facebook.com/people/THE-ROOM/61585106975811/" target="_blank" rel="noopener noreferrer" aria-label="THE ROOM™ en Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1Z"/></svg></a>
+          <a href="https://www.instagram.com/theroom.underground/" target="_blank" rel="noopener noreferrer" aria-label="THE ROOM™ en Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r="1" class="icon-fill"/></svg></a>
+          <a href="https://open.spotify.com/playlist/4k1rHoFXBdgaDnL1m1JgdO?si=p8V7jeQrSfqkieSlqwzFSw" target="_blank" rel="noopener noreferrer" aria-label="THE ROOM™ en Spotify"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M7 9c3.5-1 7.5-.6 10.5 1M8 12c2.8-.8 6.1-.4 8.7.9M9 15c2-.5 4.2-.2 6 .7"/></svg></a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="room-hero" id="top" tabindex="-1">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-stamp">UNDERGROUND CULTURE<br>ELECTRONIC MUSIC / MX</div>
+      <div class="hero-content">
+        <p class="eyebrow"><i class="live-dot"></i> NO ES UN LUGAR. ES UNA FRECUENCIA.</p>
+        <h1 class="hero-title--typing" aria-label="THE ROOM™"><span class="hero-title__line hero-title__line--the">THE</span><br><span class="hero-title__line hero-title__line--room">ROOM<sup>™</sup></span></h1>
+        <!-- CTA PRÓXIMANTE -->
+        <a class="ticket-cta" data-ticket-cta hidden><span>PRÓXIMAMENTE</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+        <div class="hero-bottom"><p>Un espacio para quienes<br>habitan el otro lado del sonido.</p><a href="#manifesto" class="scroll-link">ENTER THE ROOM™ <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg></a></div>
+      </div>
+      <div class="hero-side-note">VOL. 001 — THE EXPERIENCE</div>
+      <div class="hero-bottom-line"><span>EST. IN THE UNDERGROUND</span><span>23° 40' N / 101° 30' W</span></div>
+    </section>
+
+    <section class="manifesto section-pad" id="manifesto">
+      <div class="section-kicker" data-reveal><span>01 / MANIFIESTO</span><span>THE ROOM™ — FREQUENCY IS EVERYTHING</span></div>
+      <div class="manifesto-layout">
+        <h2 data-reveal>NO SE<br>EXPLICA.<br><em>SE SIENTE.</em></h2>
+        <div class="manifesto-copy" data-reveal><span class="red-cross">✳</span><p>THE ROOM™ nace del impulso de crear un punto de encuentro alrededor de la música electrónica underground.</p><p>Una experiencia donde el sonido, la oscuridad y la energía colectiva construyen algo que va más allá de la pista.</p><p class="copy-small">SIN EXPECTATIVAS. SIN FRONTERAS. SOLO FRECUENCIA.</p></div>
+      </div>
+      <div class="manifesto-marquee" aria-hidden="true"><span>FEEL THE FREQUENCY — FEEL THE FREQUENCY — </span></div>
+    </section>
+
+    <section class="archive section-pad" id="archive">
+      <div class="section-kicker" data-reveal><span>02 / ARCHIVO</span><span>MEMORIES IN MOTION</span></div>
+      <div class="archive-heading" data-reveal><h2>LO QUE<br><em>HA SUCEDIDO.</em></h2><p>Cada encuentro deja una huella.<br>Esto es parte de nuestra historia.</p></div>
+      <article class="archive-card" data-reveal>
+        <div class="archive-art"><img class="archive-poster" src="assets/images/archive-001.jpg" alt="Cartel de THE ROOM™ en Acámbaro, Guanajuato, el 31 de octubre de 2026" loading="lazy"></div>
+        <div class="archive-info"><div><span class="micro-label">EDICIÓN / 001</span><h3>THE ROOM™</h3><p>Una noche. Una frecuencia.</p></div><div class="archive-meta"><span>31 OCT 2026</span><span>ACÁMBARO, GTO. — MÉXICO</span><span class="archive-status">PASADO / ARCHIVO</span></div></div>
+      </article>
+      <div class="archive-foot" data-reveal><span>EL ARCHIVO CONTINÚA</span><span>001 — ∞</span></div>
+    </section>
+
+    <section class="next-signal section-pad" id="signal">
+      <div class="signal-grid" aria-hidden="true"></div>
+      <div class="section-kicker" data-reveal><span>03 / PRÓXIMA FRECUENCIA</span><span>TRANSMISSION PENDING</span></div>
+      <div class="signal-content" data-reveal><span class="signal-orb">✳</span><p class="eyebrow">THE NEXT CHAPTER IS LOADING</p><h2>LA NOCHE<br>NO <em>TERMINA.</em></h2><p class="signal-desc">La próxima señal llegará pronto.<br>Mantente cerca del sonido.</p>
+      <!-- CTA PRÓXIMANTE -->
+      <!--<span class="coming-soon">PRÓXIMAMENTE <i></i></span> -->
+      <a class="signal-follow-cta" href="https://www.instagram.com/theroom.underground/" target="_blank" rel="noopener noreferrer">SIGUE LA SEÑAL EN INSTAGRAM <span aria-hidden="true">↗</span></a></div>
+      <div class="signal-footer"><span>THE ROOM™ — UNDERGROUND CULTURE</span><nav class="social-links signal-social-links" aria-label="Redes sociales"><a href="https://www.facebook.com/people/THE-ROOM/61585106975811/" target="_blank" rel="noopener noreferrer" aria-label="THE ROOM en Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1Z"/></svg></a><a href="https://www.instagram.com/theroom.underground/" target="_blank" rel="noopener noreferrer" aria-label="THE ROOM™ en Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r="1" class="icon-fill"/></svg></a><a href="https://open.spotify.com/playlist/4k1rHoFXBdgaDnL1m1JgdO?si=p8V7jeQrSfqkieSlqwzFSw" target="_blank" rel="noopener noreferrer" aria-label="THE ROOM™ en Spotify"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M7 9c3.5-1 7.5-.6 10.5 1M8 12c2.8-.8 6.1-.4 8.7.9M9 15c2-.5 4.2-.2 6 .7"/></svg></a></nav></div>
+    </section>
+
+    <footer class="room-footer"><a class="footer-mark" href="#top" aria-label="THE ROOM inicio"><img src="assets/images/logo-horizontal.svg" alt="THE ROOM™"></a><span>BUILT FROM SOUND. HELD BY THE UNDERGROUND.</span><a href="#top">VOLVER ARRIBA ↑</a><small><span>© 2026 THE ROOM™. ALL FREQUENCIES RESERVED.</span><button class="privacy-open" type="button" data-privacy-open>PRIVACIDAD / COOKIES</button><span class="footer-credit">BY ALDO OMAR DESIGN</span></small></footer>
+  </main>
+  <aside class="privacy-notice" data-privacy-notice aria-label="Aviso de privacidad" hidden>
+    <p><strong>PRIVACIDAD</strong><span>Guardamos tu elección. Sin rastreadores activos.</span></p>
+    <div class="privacy-notice-actions"><button type="button" data-privacy-open>AJUSTAR</button><button type="button" data-privacy-essential>ESENCIALES</button><button type="button" class="privacy-notice-accept" data-privacy-all>ACEPTAR</button></div>
+  </aside>
+  <dialog class="privacy-dialog" data-privacy-modal aria-labelledby="privacy-title" aria-describedby="privacy-description">
+    <div class="privacy-shell">
+      <button class="privacy-close" type="button" data-privacy-close aria-label="Cerrar sin guardar cambios">×</button>
+      <div class="privacy-heading"><span class="privacy-mark" aria-hidden="true">✳</span><div><p class="privacy-kicker">THE ROOM™ / PRIVACY CONTROL</p><h2 id="privacy-title">TU PRIVACIDAD<br>ES IMPORTANTE</h2><p class="privacy-subtitle">Preferencias de cookies</p></div></div>
+      <p class="privacy-description" id="privacy-description">Usamos almacenamiento esencial para recordar tu configuración. Los servicios opcionales de análisis y marketing solo se activarán con tu consentimiento. Actualmente el sitio no carga herramientas de seguimiento.</p>
+      <div class="privacy-options">
+        <section class="privacy-option"><div class="privacy-option-main"><button class="privacy-expand" type="button" aria-expanded="false" aria-controls="privacy-essential-detail" aria-label="Ver detalles de cookies esenciales">＋</button><div><h3>ESENCIALES <span>(SIEMPRE ACTIVAS)</span></h3><p class="privacy-detail" id="privacy-essential-detail" hidden>Necesarias para recordar tu elección de privacidad y mantener el funcionamiento básico del sitio.</p></div><span class="privacy-always">SIEMPRE ACTIVAS</span></div></section>
+        <section class="privacy-option"><div class="privacy-option-main"><button class="privacy-expand" type="button" aria-expanded="false" aria-controls="privacy-optional-detail" aria-label="Ver detalles de análisis y marketing">＋</button><div><h3>ANÁLISIS Y MARKETING</h3><p class="privacy-detail" id="privacy-optional-detail" hidden>Permiten medir visitas y personalizar campañas. No hay herramientas de este tipo activas en este momento.</p></div><button class="privacy-switch" type="button" role="switch" aria-checked="false" data-privacy-switch><span class="switch-state">NO</span><i></i></button></div></section>
+      </div>
+      <div class="privacy-actions"><button type="button" class="privacy-button" data-privacy-save>GUARDAR SELECCIÓN</button><button type="button" class="privacy-button" data-privacy-essential>SOLO ESENCIALES</button><button type="button" class="privacy-button privacy-button-primary" data-privacy-all>ACEPTAR TODAS</button></div>
+    </div>
+  </dialog>
+</body>
+</html>
